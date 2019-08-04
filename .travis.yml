@@ -1,8 +1,11 @@
 language: generic
 
 # Dependency of the minted package and install fonts
+# Use optipng and imagemagick so we can get a thumbnail of our cv
 before_install:
   - sudo apt-get install python-pygments
+  - sudo apt-get install optipng
+  - sudo apt-get install imagemagick
   - mkdir $HOME/.fonts
   - cp -a $TRAVIS_BUILD_DIR/src/fonts/. $HOME/.fonts/
   - fc-cache -f -v
