@@ -1,4 +1,4 @@
-# cv
+# Chris Leaman - Resume
 
 [![Build Status](https://travis-ci.com/chrisleaman/cv.svg?branch=master)](https://travis-ci.com/chrisleaman/cv)
 
