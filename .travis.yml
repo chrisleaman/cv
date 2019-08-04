@@ -37,3 +37,6 @@ script:
 
   # You can also pass arguments to texliveonfly:
 #  - texliveonfly --arguments='-shell-escape' main.tex
+
+notifications:
+  email: false
