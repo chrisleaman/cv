@@ -2,10 +2,12 @@ language: generic
 
 # Dependency of the minted package and install fonts
 # Use optipng and imagemagick so we can get a thumbnail of our cv
+# Also need to fix imagemagick permissions https://stackoverflow.com/a/52853157
 before_install:
   - sudo apt-get install python-pygments
   - sudo apt-get install optipng
   - sudo apt-get install imagemagick
+  - sudo sed -i '/PDF/s/none/read|write/' /etc/ImageMagick-6/policy.xml
   - mkdir $HOME/.fonts
   - cp -a $TRAVIS_BUILD_DIR/src/fonts/. $HOME/.fonts/
   - fc-cache -f -v
