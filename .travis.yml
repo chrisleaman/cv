@@ -20,8 +20,8 @@ before_script: cd $TRAVIS_BUILD_DIR/src/
 
 script:
   # Texliveonfly will download packages automatically
-  - texliveonfly --arguments='-shell-escape' cv.tex
-  - texliveonfly --arguments='-shell-escape' letter.tex
+  - texliveonfly cv.tex
+  - texliveonfly letter.tex
   # Build CV
   - latexmk --pdf -pdflatex="xelatex --shell-escape" cv.tex
   # Build cover letter
