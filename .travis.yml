@@ -28,7 +28,7 @@ script:
   - latexmk --pdf -pdflatex="xelatex --shell-escape" cv.tex
 
   # Create thumbnail of first page of cv
-  - magick cv.pdf[0] -resize 800x800 -flatten cv-thumbnail.png
+  - convert cv.pdf[0] -resize 800x800 -flatten cv-thumbnail.png
   - optipng cv-thumbnail.png
 
   # You can use latexmk to automatically handle bibtex and references (recommended)
