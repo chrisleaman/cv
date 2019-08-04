@@ -24,11 +24,8 @@ before_script: cd $TRAVIS_BUILD_DIR/src/
 script:
   # Texliveonfly will download packages automatically
   - texliveonfly --compiler=xelatex cv.tex
-  - texliveonfly --compiler=xelatex letter.tex
   # Build CV
   - latexmk --pdf -pdflatex="xelatex --shell-escape" cv.tex
-  # Build cover letter
-  - latexmk --pdf -pdflatex="xelatex --shell-escape" letter.tex
 
   # You can use latexmk to automatically handle bibtex and references (recommended)
   # - latexmk -pdf main.tex
@@ -52,7 +49,6 @@ deploy:
     secure: lOYS1AjQo4tmzOaPNJLz1ypdRo7mH3xdq1xu/8dowjKPbVg2gyjudbNBpZTDXDZ7H1u9NApz+37OV9WOl2Ze+iCkEXsOvemESPJRctTvaUE5tGJPsuPm2p/9mIFbtc0bUz1FgUXToQlsTgLMq9vE/MvOvAe4Rr7FgfgyURUzOLh6cfx5b/HxtI7judc3sed9eCby6pQTy9obtAMl2gn8hD8Yw795/Pu3TUiEZwa/faTCS0uHUFEx1fg34QsYfjr4iRwtfk/JnIgD9Kq2LM8+pnOyC+JZ94LyopHYEbLfTb4IwppN+5QSDKDi9N+H0+yKBwV13XfaaJbYpVNng6o7XvuDOdj9GA/rl/968Xl580iu/pDspJRQcmZlZjnEonv4AqedchG2jo6DdOmbb4olnW5JaM4lSBBdL/UYiBdBTq19gRc88GAiZc6N5pydQGG7rs5tVARQTF3Ig+SD21sN4Qf31Bh6nrNbAPTRl4Pu+RAWWIcuzMpL18ask/0wz0V9MgKGrwxEYretqWEdN+wxGeOOSLdT5O3h0St9wISXwDgWc+cF/A+UCxlDT1SaLehxR7VHGBo0ZRLeKdDHEnVBeB5294I8fQje3F6DN603DXw20m9S6yflAQl8mlcwg/5g38vpHv5mdX7m0Q0iUDbUrrt8JMrKuMvAz0NvILd3WNg=
   file: 
     - "./cv.pdf"
-    - "./letter.pdf"
   on:
     repo: chrisleaman/cv
     all_branches: true
