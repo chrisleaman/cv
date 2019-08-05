@@ -3,10 +3,14 @@
 [![Build Status](https://travis-ci.com/chrisleaman/cv.svg?branch=master)](https://travis-ci.com/chrisleaman/cv)
 
 <p align="center">
-  <img height="400" src="https://github.com/chrisleaman/cv/releases/download/untagged-fefa30c938b113622f50/cv_thumbnail.png">
+    <a href="https://github.com/chrisleaman/cv/releases/download/untagged-fefa30c938b113622f50/cv.pdf">
+        <img height="400" src="https://github.com/chrisleaman/cv/releases/download/untagged-fefa30c938b113622f50/cv_thumbnail.png">
+  </a>
 </p>
 
 This repo contains contains the code for my resume. General workflow is to write to LaTeX, push to git and then let Travis-CI automatically build the .pdf files using xelatex. The advantages of this workflow is that a working LaTeX distribution is not needed locally and different versions of the resume can be built on different branches.
+
+The latest compiled `.pdf` can always be found on the [releases page](https://github.com/chrisleaman/cv/releases).
 
 Useful references:
   - [PHPirates/travis-ci-latex-pdf](https://github.com/PHPirates/travis-ci-latex-pdf#deploy): For instructions on setting up Travis-CI integration
