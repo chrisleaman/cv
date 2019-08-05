@@ -4,8 +4,8 @@
 
 <p align="center">
     <a href="https://github.com/chrisleaman/cv/releases/download/untagged-fefa30c938b113622f50/cv.pdf">
-        <img height="400" src="https://github.com/chrisleaman/cv/releases/download/untagged-fefa30c938b113622f50/cv_thumbnail.png">
-  </a>
+        <img height="840" width="605" src="https://github.com/chrisleaman/cv/releases/download/untagged-fefa30c938b113622f50/cv_thumbnail.png">
+    </a>
 </p>
 
 This repo contains contains the code for my resume. General workflow is to write to LaTeX, push to git and then let Travis-CI automatically build the .pdf files using xelatex. The advantages of this workflow is that a working LaTeX distribution is not needed locally and different versions of the resume can be built on different branches.
