@@ -4,8 +4,8 @@
 
 <p align="center">
   <a href="https://github.com/chrisleaman/cv/releases/download/untagged-fefa30c938b113622f50/cv.pdf">
-  <img src="https://github.com/chrisleaman/cv/releases/download/untagged-fefa30c938b113622f50/cv_thumbnail.png"
-       alt="CV thumbnail" width="400"/>
+  <img src="https://github.com/chrisleaman/cv/releases/download/20190805091518-HEAD-b19a73c/cv_thumbnail.png"
+       alt="CV thumbnail" width="300"/>
   </a>
 </p>
 
