@@ -39,6 +39,13 @@ script:
 notifications:
   email: false
 
+before_deploy:
+  # Set up git user name and tag this commit
+  - git config --local user.name "Chris Leaman"
+  - git config --local user.email "ckleaman@gmail.com"
+  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git rev-parse --abbrev-ref HEAD)-$(git log --format=%h -1)}
+  - git tag $TRAVIS_TAG
+
 deploy:
   provider: releases
   skip_cleanup: true
