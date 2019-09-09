@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.com/chrisleaman/cv.svg?branch=master)](https://travis-ci.com/chrisleaman/cv)
 
 <p align="center">
-  <a href="https://github.com/chrisleaman/cv/releases/download/untagged-fefa30c938b113622f50/cv.pdf">
+  <a href="https://github.com/chrisleaman/cv/releases/download/v1.0.0/cv.pdf">
   <img src="images/cv_thumbnail.png"
        alt="CV thumbnail" width="300"/>
   </a>
