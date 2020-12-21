@@ -42,6 +42,7 @@ notifications:
 deploy:
   provider: releases
   skip_cleanup: true
+  api_key: $GITHUB_TOKEN
   file: 
     - "./cv.pdf"
     - "./cv_thumbnail.png"
