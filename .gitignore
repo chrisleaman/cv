@@ -1,3 +1,6 @@
+## Don't include personal contact details in repo
+src/sections/address.tex
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
