@@ -1,8 +1,7 @@
-\documentclass[print]{friggeri}
+\documentclass{friggeri}
 \usepackage{multicol}
 \usepackage{changepage}
-\usepackage{ifthen}
-\usepackage{changepage}
+\usepackage{etoolbox}
 
 % Match double quotes
 % https://tex.stackexchange.com/a/52354
@@ -10,7 +9,15 @@
 \usepackage [autostyle, english = american]{csquotes}
 \MakeOuterQuote{"}
 
-\newcommand{\forweb}{false} % censor items if outputting web
+\usepackage{hyperref}
+\hypersetup{
+  allbordercolors=blue,
+  pdfborderstyle={/S/U/W 1},
+}
+
+% Toggle personal contact information for web version
+\newbool{forweb}
+\setbool{forweb}{true}
 
 \setlength{\columnsep}{0cm}
 
@@ -31,8 +38,6 @@
 
 \input{sections/memberships.tex}
 
-\input{sections/publications.tex}
-
 \newpage
 
 \input{sections/projects.tex}
@@ -40,3 +45,7 @@
 \newpage
 
 \input{sections/volunteer.tex}
+
+\input{sections/publications.tex}
+
+\end{document}

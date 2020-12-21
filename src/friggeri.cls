@@ -1,6 +1,8 @@
 \ProvidesClass{friggeri}[2012/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 
+% Can use the print option to print black and white
+% e.g. \documentclass[print]{friggeri}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
   \PassOptionsToClass{\CurrentOption}{article}%
@@ -10,9 +12,14 @@
 
 \usepackage{changepage}
 
+
+
 %%%%%%%%%%
 % Colors %
 %%%%%%%%%%
+
+% Note that this may cause issues with hyperref
+% https://tex.stackexchange.com/a/183340
 
 \RequirePackage{xcolor}
 
@@ -40,20 +47,22 @@
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \else
-  \colorlet{fillheader}{gray}
-  \colorlet{header}{white}
+  % \colorlet{fillheader}{gray}
+  % \colorlet{header}{white}
+  \colorlet{fillheader}{white}
+  \colorlet{header}{gray}
 \fi
 \colorlet{textcolor}{gray}
 \colorlet{headercolor}{gray}
 
-% Don't use colorfull headers
-\colorlet{green}{gray}
-\colorlet{orange}{gray}
-\colorlet{purple}{gray}
-\colorlet{brown}{gray}
-\colorlet{red}{gray}
-\colorlet{blue}{gray}
-\colorlet{darkblue}{gray}
+% % Don't use colorfull headers
+% \colorlet{green}{gray}
+% \colorlet{orange}{gray}
+% \colorlet{purple}{gray}
+% \colorlet{brown}{gray}
+% \colorlet{red}{gray}
+% \colorlet{blue}{gray}
+% \colorlet{darkblue}{gray}
 
 
 %%%%%%%%%
@@ -111,13 +120,9 @@
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        blue\or%
-        red\or%
-        orange\or%
-        green\or%
-        purple\or%
-        darkblue\or%
-        brown\else%
+        headercolor\or%
+        headercolor\or%
+        headercolor\else%
         headercolor\fi%
     } #1#2#3%
   }%
@@ -207,4 +212,16 @@
 %%%%%%%%%%%%%%%%
 
 \RequirePackage[left=1.5cm,top=1.5cm,right=1.5cm,bottom=1.5cm,nohead,nofoot]{geometry}
-\RequirePackage[hidelinks]{hyperref}
+% \RequirePackage{hyperref}
+% \hypersetup{
+%     allbordercolors=blue,
+%   pdfborderstyle={/S/U/W 1},
+% }
+
+
+% Reduce occurance of hyphernation
+% https://tex.stackexchange.com/a/177179
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
