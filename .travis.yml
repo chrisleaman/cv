@@ -42,8 +42,6 @@ notifications:
 deploy:
   provider: releases
   skip_cleanup: true
-  api_key:
-    secure: dSBYm+3IhohaTyQR4RThvAxBnQZVY7YkIkVR0/BaENbPuBYIHxW26Nc/HCQZiZhQ04ZRPAjlPZrs8jre0FK4GjJW787SfN8R/wtYMbvhvOv7xbWUKOgl85hgeRledeJGmLP03/RPQ5bjcJf1WF62sdXiqhb4m08l9HBpcNmu+GSlY7IDZic87QWGTcU84TsB6LRNklG1p8guzTrtfLKq9L4Woyi5rvdwF76SeVXbOg3zTYfHrVrSLGqZMHjfwV/+ZK486x9M7SILVvlsf5p8lepM5uiP8cqTTyHLAwCb/eBcZaIyy3afagOQ1nIw4S7yV5VccMTvUTMFmZ/lP8+nfetXmbUOzJ2gwDYmrO56kQUkzrnTsLblRcoDCJK3baT5H3hJKOTjt1Vga+oZu9k+dd2qEBSCKDtY2XdRzDnbJnWzWJHs9OQqxkheLbusrdWr7yFRZ8Fff/iLRjx6L0of0AZmqFo62i9piVZ1luQnKfuqWpaBvS0B9RpLdpL3HnKVSiK5EGbbsLSMQB0krZ/QWNZrry/tR+BgyfHzPE1xKQ3MR5js6cybzGNryyQRmjl/6WK/udRw+pEpzFrN1lxU/rUeuE7ZMP82majoPlGi197p8HaYeh4llVD1tbu1Kw2rxhohodSqseBr2Lh/KTFZwB3mHfDSGIUa4UR2pot4owg=
   file: 
     - "./cv.pdf"
     - "./cv_thumbnail.png"
