@@ -2,12 +2,10 @@
 \begin{adjustwidth}{2cm}{}
   \vspace{-2\parskip}
   \begin{multicols}{3}
-    Email: \href{mailto:chris@leaman.io}{chris@leaman.io}\\
-    \\
-    \\
-    \\
-    \\
-    \\
+    \ifbool{forweb}{    
+      Email: \href{mailto:chris@leaman.io}{chris@leaman.io}}%
+    {\input{sections/address.tex}}
+
   \end{multicols}
-  \vspace{-5\parskip}
+  \vspace{-1\parskip}
 \end{adjustwidth}
