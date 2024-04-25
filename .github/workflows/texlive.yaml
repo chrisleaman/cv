@@ -1,0 +1,15 @@
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: xu-cheng/texlive-action@v2
+        with:
+          scheme: full
+          run: |
+            apk add make imagemagick optipng php8-pecl-imagick
+            make
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "src/cv.pdf, cv_thumbnail.png"

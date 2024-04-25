@@ -3,8 +3,8 @@
 [![Build Status](https://travis-ci.com/chrisleaman/cv.svg?branch=master)](https://travis-ci.com/chrisleaman/cv)
 
 <p align="center">
-  <a href="https://github.com/chrisleaman/cv/releases/download/v1.0.0/cv.pdf">
-  <img src="images/cv_thumbnail.png"
+  <a href="https://github.com/chrisleaman/cv/releases/latest/download/cv.pdf">
+  <img src="https://github.com/chrisleaman/cv/releases/latest/download/cv_thumbnail.png"
        alt="CV thumbnail" width="300"/>
   </a>
 </p>
