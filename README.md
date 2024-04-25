@@ -15,5 +15,4 @@ This repo contains contains the code for my resume. General workflow is to write
 The latest compiled `.pdf` can always be found on the [releases page](https://github.com/chrisleaman/cv/releases).
 
 Useful references:
-  - [PHPirates/travis-ci-latex-pdf](https://github.com/PHPirates/travis-ci-latex-pdf#deploy): For instructions on setting up Travis-CI integration
   - [depressiveRobot/friggeri-cv-a4](https://github.com/depressiveRobot/friggeri-cv-a4): Resume template, although I've made some tweaks to mine
