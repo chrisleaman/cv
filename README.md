@@ -3,6 +3,7 @@
 [![Build Status](https://github.com/chrisleaman/cv/actions/workflows/texlive.yaml/badge.svg?event=push)](https://github.com/chrisleaman/cv/actions/workflows/texlive.yaml)
 
 <p align="center">
+  <a href="https://github.com/chrisleaman/cv/releases/latest/download/cv.pdf">Download cv.pdf</a>
   <a href="https://github.com/chrisleaman/cv/releases/latest/download/cv.pdf">
   <img src="https://github.com/chrisleaman/cv/releases/latest/download/cv_thumbnail.png"
        alt="CV thumbnail" width="300"/>
