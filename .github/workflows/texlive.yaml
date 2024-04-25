@@ -8,7 +8,7 @@ jobs:
         with:
           scheme: full
           run: |
-            apk add make imagemagick optipng php8-pecl-imagick
+            apk add make imagemagick optipng
             make
       - uses: ncipollo/release-action@v1
         with:
