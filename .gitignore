@@ -1,6 +1,12 @@
 ## Don't include personal contact details in repo
 src/sections/address.tex
 
+## ignore cover letter folders
+/letters/
+
+## don't commit generated .pdf in src directory
+/src/cv.pdf
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
