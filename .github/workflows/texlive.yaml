@@ -1,3 +1,5 @@
+name: Build cv.pdf
+
 on: 
   push:
     tags:
@@ -9,13 +11,16 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: xu-cheng/texlive-action@v2
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Build .pdf and thumbnail files
+        uses: xu-cheng/texlive-action@v2
         with:
           scheme: full
           run: |
             apk add make imagemagick optipng
             make
-      - uses: ncipollo/release-action@v1
+      - name: Create release
+        uses: ncipollo/release-action@v1
         with:
           artifacts: "src/cv.pdf, cv_thumbnail.png"
