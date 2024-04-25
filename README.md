@@ -1,6 +1,6 @@
 # Chris Leaman - CV
 
-[![Build Status](https://travis-ci.com/chrisleaman/cv.svg?branch=master)](https://travis-ci.com/chrisleaman/cv)
+[![Build Status](https://github.com/chrisleaman/cv/actions/workflows/texlive.yaml/badge.svg?event=push)](https://github.com/chrisleaman/cv/actions/workflows/texlive.yaml)
 
 <p align="center">
   <a href="https://github.com/chrisleaman/cv/releases/latest/download/cv.pdf">
