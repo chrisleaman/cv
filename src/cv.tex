@@ -1,7 +1,12 @@
+% https://www.reddit.com/r/EngineeringResumes/wiki/index
+
 \documentclass{friggeri}
 \usepackage{multicol}
 \usepackage{changepage}
 \usepackage{etoolbox}
+\usepackage{enumitem}
+\usepackage{siunitx}
+\sisetup{detect-all,group-separator = {,}, per-mode=repeated-symbol}
 
 % Match double quotes
 % https://tex.stackexchange.com/a/52354
@@ -11,41 +16,62 @@
 
 \usepackage{hyperref}
 \hypersetup{
-  allbordercolors=blue,
-  pdfborderstyle={/S/U/W 1},
+	allbordercolors=blue,
+	pdfborderstyle={/S/U/W 1},
 }
 
 % Toggle personal contact information for web version
 \newbool{forweb}
-\setbool{forweb}{true}
+\setbool{forweb}{false}
 
 \setlength{\columnsep}{0cm}
 
+
+% header and footer
+\pagestyle{fancy}
+% Clear the header and footer
+\fancyhf{}
+% remove top line
+\renewcommand{\headrulewidth}{0pt}
+% Set the right side of the footer to be the page number
+\fancyfoot[C]{\footnotesize \thepage\ of \pageref*{LastPage}}
+% \rhead{{\tiny \addfontfeature{Color=lightgray}Current as of \\ \today}}
+\rhead{\footnotesize \addfontfeature{Color=lightgray} Current as of \\ \today}
+
+
 \begin{document}
 
-\header{chris}{leaman}{chartered professional maritime \& coastal engineer}
-\vspace{0.1cm} % ADJUST THIS TO PUSH CONTENTS UP/DOWN THE PAGE
+% \header{chris}{leaman}{chartered maritime \& coastal engineer}
+% \vspace{-1.0cm} % ADJUST THIS TO PUSH CONTENTS UP/DOWN THE PAGE
 
-\input{sections/summary.tex}
+\input{sections/header.tex}
 
-\input{sections/contact.tex}
-
-\input{sections/education.tex}
+% \input{sections/summary.tex}
 
 \input{sections/experience.tex}
 
-\input{sections/software.tex}
+\input{sections/skills.tex}
+
+\input{sections/education.tex}
 
 \input{sections/memberships.tex}
 
 \newpage
+\input{sections/highlights.tex}
 
 \input{sections/projects.tex}
 
-\newpage
+% \input{sections/projects-table.tex}
 
+% \input{sections/publications.tex}
+
+% remove any extra blank pages
+% https://stackoverflow.com/a/62581982
+% \let\clearpage\relax
+
+% \newpage
 \input{sections/volunteer.tex}
 
-\input{sections/publications.tex}
+% \input{sections/software.tex}
 
 \end{document}
