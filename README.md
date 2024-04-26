@@ -10,7 +10,7 @@
   </a>
 </p>
 
-This repo contains contains the code for my resume. General workflow is to write to LaTeX, push to git and then let Travis-CI automatically build the .pdf files using xelatex. The advantages of this workflow is that a working LaTeX distribution is not needed locally and different versions of the resume can be built on different branches.
+This repo contains contains the code for my resume. General workflow is to write to LaTeX, push to Github and then let a [Github Action](https://github.com/chrisleaman/cv/actions/workflows/texlive.yaml) automatically build the .pdf files using xelatex. The advantages of this workflow is that a working LaTeX distribution is not needed locally and different versions of the resume can be built on different branches.
 
 The latest compiled `.pdf` can always be found on the [releases page](https://github.com/chrisleaman/cv/releases).
 
